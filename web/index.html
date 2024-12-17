@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html> <!-- Declares that this is an HTML5 document -->
+<html lang="en"> <!-- Specifies the language of the document as English -->
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding used by this document, necessary for special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the webpage is responsive for different devices -->
+    <title>To-Do List</title> <!-- Tab title of the page -->
+
+    <!-- Link to external CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript library (eel.js) for Python-JavaScript communication -->
+    <script type="text/javascript" src="/eel.js"></script>
+
+    <!-- Sets the favicon (icon in the browser tab) -->
+    <link rel="icon" type="image/x-icon" href="assets/todo.webp">
+</head>
+<body>
+<div class="todo-container"> <!-- Container that holds the main content -->
+    <h1>To-Do List</h1> <!-- Title of the App -->
+    
+    <!-- Form for creating a new task -->
+    <form class="todo-form" id="todo-form">
+        <!-- Input field for typing a new task -->
+        <input type="text" id="todo-input" placeholder="Add a new task" required>
+
+        <!-- Submit button to add the task -->
+        <button type="submit">Add</button>
+    </form>
+
+    <!-- Unordered list where tasks will be dynamically added -->
+    <ul class="todo-list" id="todo-list">
+        <!-- Placeholder: New tasks will be rendered here -->
+    </ul>
+
+    <!-- Section for completed tasks -->
+    <div class="completed-container">
+        <h2>Tasks Completed</h2> <!-- Title for completed tasks -->
+
+        <!-- Completed tasks are added here -->
+        <ul class="completed-list" id="completed-list">
+            <!-- Placeholder: Completed tasks will be rendered here -->
+        </ul>
+    </div>
+</div>
+
+<!-- Script where all the logic for task operations is defined -->
+<script src="main.js"></script>
+</body>
+</html>
